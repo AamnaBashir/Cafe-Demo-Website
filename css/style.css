@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-image:linear-gradient(rgba(218,160,160,0.6),rgba(240, 241, 159, 0.6)), url('../images/pic1.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+
+}
+.clearfix:after{
+    content: ".";
+    visibility:hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin: 0px auto;
+}
+.logo{
+    height:200px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    
+}
+.main-nav{
+    float: right;
+    margin: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+  border-bottom:2px solid #ac3ff5;
+}
+.main-div{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: rgb(243, 220, 10);
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s color 0.2s;
+}
+.btn-full{
+    background-color: transparent;
+    color: #8215b1;
+    margin-right: 15px;
+    border: 1px solid #a030cf;
+}
+.btn-full:hover{
+    background-color:#85d1e4;
+}
+.btn-nav{
+    background-color: transparent;
+    color: #85d1ec;
+    margin-right: 15px;
+    border: 1px solid #85d1ec;
+}
+.btn-nav:hover{
+    background-color: #bd78db;
+}
+.colorchange{
+    animation: colorch 3s infinite;
+}
+@keyframes colorch{
+    0%{color:white;}
+    25%{color: palevioletred;}
+    50%{color:rgb(73, 169, 233) ;}
+    100%{color: rgb(177, 60, 177);}
+}
+@media only screen and(max-width:1180px){
+    .main-div{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and(max-width: 998px){
+    h1{
+        font-size: 200%;
+    }
+}
+@media only screen and(max-width: 768px){
+    h1{
+        font-size: 180%;
+    }
+    .main-nav{display: none;}
+}
